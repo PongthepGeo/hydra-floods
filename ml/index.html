@@ -1,0 +1,1499 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      <link rel="shortcut icon" href="../img/favicon.ico">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.1.3">
+    
+    
+      
+        <title>ml module - HYDRAFloods Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.2cb7adb3.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.f0267088.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
+      
+    
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+      
+  
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#hydrafloods.ml" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid" aria-label="Header">
+    <a href=".." title="HYDRAFloods Documentation" class="md-header-nav__button md-logo" aria-label="HYDRAFloods Documentation">
+      
+  <img src="../img/hydrafloods_logo.png" alt="logo">
+
+    </a>
+    <label class="md-header-nav__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header-nav__title" data-md-component="header-title">
+      
+        <div class="md-header-nav__ellipsis">
+          <span class="md-header-nav__topic md-ellipsis">
+            HYDRAFloods Documentation
+          </span>
+          <span class="md-header-nav__topic md-ellipsis">
+            
+              ml module
+            
+          </span>
+        </div>
+      
+    </div>
+    
+      <label class="md-header-nav__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active">
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="HYDRAFloods Documentation" class="md-nav__button md-logo" aria-label="HYDRAFloods Documentation">
+      
+  <img src="../img/hydrafloods_logo.png" alt="logo">
+
+    </a>
+    HYDRAFloods Documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href=".." class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../installation/" class="md-nav__link">
+      Installation
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../getting-started/" class="md-nav__link">
+      Getting Started
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../using-datasets/" class="md-nav__link">
+      Using the Dataset class
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../algorithms/" class="md-nav__link">
+      Algorithms
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../workflow-example/" class="md-nav__link">
+      Workflow Example
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../cli/" class="md-nav__link">
+      Command Line Interface
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-8" type="checkbox" id="nav-8" checked>
+    
+    <label class="md-nav__link" for="nav-8">
+      API Reference
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="API Reference" data-md-level="1">
+      <label class="md-nav__title" for="nav-8">
+        <span class="md-nav__icon md-icon"></span>
+        API Reference
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../datasets/" class="md-nav__link">
+      datasets module
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../decorators/" class="md-nav__link">
+      decorators module
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../geeutils/" class="md-nav__link">
+      geeutils module
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../fetch/" class="md-nav__link">
+      fetch module
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../filtering/" class="md-nav__link">
+      filtering module
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        ml module
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+    
+    <a href="./" class="md-nav__link md-nav__link--active">
+      ml module
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#hydrafloods.ml" class="md-nav__link">
+    ml
+  </a>
+  
+    <nav class="md-nav" aria-label="ml">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#hydrafloods.ml.minmax_feature_scaling" class="md-nav__link">
+    minmax_feature_scaling()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hydrafloods.ml.minmax_image_scaling" class="md-nav__link">
+    minmax_image_scaling()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hydrafloods.ml.minmax_scaling_dict" class="md-nav__link">
+    minmax_scaling_dict()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hydrafloods.ml.pca" class="md-nav__link">
+    pca()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hydrafloods.ml.random_forest_ee" class="md-nav__link">
+    random_forest_ee()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hydrafloods.ml.standard_feature_scaling" class="md-nav__link">
+    standard_feature_scaling()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hydrafloods.ml.standard_image_scaling" class="md-nav__link">
+    standard_image_scaling()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hydrafloods.ml.standard_scaling_dict" class="md-nav__link">
+    standard_scaling_dict()
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../thresholding/" class="md-nav__link">
+      thresholding module
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../timeseries/" class="md-nav__link">
+      timeseries module
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../utils/" class="md-nav__link">
+      utils module
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#hydrafloods.ml" class="md-nav__link">
+    ml
+  </a>
+  
+    <nav class="md-nav" aria-label="ml">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#hydrafloods.ml.minmax_feature_scaling" class="md-nav__link">
+    minmax_feature_scaling()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hydrafloods.ml.minmax_image_scaling" class="md-nav__link">
+    minmax_image_scaling()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hydrafloods.ml.minmax_scaling_dict" class="md-nav__link">
+    minmax_scaling_dict()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hydrafloods.ml.pca" class="md-nav__link">
+    pca()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hydrafloods.ml.random_forest_ee" class="md-nav__link">
+    random_forest_ee()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hydrafloods.ml.standard_feature_scaling" class="md-nav__link">
+    standard_feature_scaling()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hydrafloods.ml.standard_image_scaling" class="md-nav__link">
+    standard_image_scaling()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hydrafloods.ml.standard_scaling_dict" class="md-nav__link">
+    standard_scaling_dict()
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                  <h1>ml module</h1>
+                
+                <div class="doc doc-object doc-module">
+<h2 class="doc doc-heading" id="hydrafloods.ml">
+
+        <code>hydrafloods.ml</code>
+
+
+      </h2>
+<div class="doc doc-contents first">
+<div class="doc doc-children">
+<div class="doc doc-object doc-function">
+<h3 class="doc doc-heading" id="hydrafloods.ml.minmax_feature_scaling">
+
+        <code class="highlight language-python">
+minmax_feature_scaling<span class="p">(</span><span class="n">fc</span><span class="p">,</span> <span class="n">scaling_dict</span><span class="p">,</span> <span class="n">feature_names</span><span class="p">)</span>        </code>
+
+
+      </h3>
+<div class="doc doc-contents ">
+<p>Function to apply min/max scaling to feature collection</p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>fc</code></td>
+<td><code>ee.FeatureCollection</code></td>
+<td>
+<p>feature collection to scale</p>
+</td>
+<td><em>required</em></td>
+</tr>
+<tr>
+<td><code>scaling_dict</code></td>
+<td><code>ee.Dictionary</code></td>
+<td>
+<p>dictionary of min/max values to scale to</p>
+</td>
+<td><em>required</em></td>
+</tr>
+<tr>
+<td><code>feature_names</code></td>
+<td><code>list[str]</code></td>
+<td>
+<p>names of feature columns to calculate apply scaling to</p>
+</td>
+<td><em>required</em></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Returns:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>ee.FeatureCollection</code></td>
+<td>
+<p>scaled feature collection</p>
+</td>
+</tr>
+</tbody>
+</table>
+<details class="quote">
+          <summary>Source code in <code>hydrafloods/ml.py</code></summary>
+          <div class="highlight">
+<pre><span></span><code><span class="k">def</span> <span class="nf">minmax_feature_scaling</span><span class="p">(</span><span class="n">fc</span><span class="p">,</span> <span class="n">scaling_dict</span><span class="p">,</span> <span class="n">feature_names</span><span class="p">):</span>
+    <span class="sd">"""Function to apply min/max scaling to feature collection</span>
+
+<span class="sd">    args:</span>
+<span class="sd">        fc (ee.FeatureCollection): feature collection to scale</span>
+<span class="sd">        scaling_dict (ee.Dictionary): dictionary of min/max values to scale to</span>
+<span class="sd">        feature_names (list[str]):  names of feature columns to calculate apply scaling to</span>
+
+<span class="sd">    returns:</span>
+<span class="sd">        ee.FeatureCollection: scaled feature collection</span>
+<span class="sd">    """</span>
+
+    <span class="k">def</span> <span class="nf">feature_scaling</span><span class="p">(</span><span class="n">feature</span><span class="p">):</span>
+        <span class="sd">"""Nested closure function to apply scaling on each column in each feature</span>
+<span class="sd">        """</span>
+
+        <span class="k">def</span> <span class="nf">iter_cols</span><span class="p">(</span><span class="n">i</span><span class="p">):</span>
+            <span class="sd">"""Loops through feature columns</span>
+<span class="sd">            """</span>
+            <span class="n">i</span> <span class="o">=</span> <span class="n">ee</span><span class="o">.</span><span class="n">String</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+            <span class="n">v</span> <span class="o">=</span> <span class="n">ee</span><span class="o">.</span><span class="n">Number</span><span class="p">(</span><span class="n">feature</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">i</span><span class="p">))</span>
+            <span class="n">minv</span> <span class="o">=</span> <span class="n">ee</span><span class="o">.</span><span class="n">Number</span><span class="p">(</span><span class="n">scaling_dict</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">i</span><span class="o">.</span><span class="n">cat</span><span class="p">(</span><span class="s2">"_min"</span><span class="p">)))</span>
+            <span class="n">maxv</span> <span class="o">=</span> <span class="n">ee</span><span class="o">.</span><span class="n">Number</span><span class="p">(</span><span class="n">scaling_dict</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">i</span><span class="o">.</span><span class="n">cat</span><span class="p">(</span><span class="s2">"_max"</span><span class="p">)))</span>
+            <span class="k">return</span> <span class="n">v</span><span class="o">.</span><span class="n">subtract</span><span class="p">(</span><span class="n">minv</span><span class="p">)</span><span class="o">.</span><span class="n">divide</span><span class="p">(</span><span class="n">maxv</span><span class="o">.</span><span class="n">subtract</span><span class="p">(</span><span class="n">minv</span><span class="p">))</span>
+
+        <span class="c1"># apply scaling on each column of feature</span>
+        <span class="n">scaled</span> <span class="o">=</span> <span class="n">ee_feature_names</span><span class="o">.</span><span class="n">map</span><span class="p">(</span><span class="n">iter_cols</span><span class="p">)</span>
+        <span class="c1"># get a dictionary of new values with old feature names</span>
+        <span class="n">newVals</span> <span class="o">=</span> <span class="n">ee</span><span class="o">.</span><span class="n">Dictionary</span><span class="o">.</span><span class="n">fromLists</span><span class="p">(</span><span class="n">ee_feature_names</span><span class="p">,</span> <span class="n">scaled</span><span class="p">)</span>
+        <span class="c1"># set feature columns new values</span>
+        <span class="k">return</span> <span class="n">feature</span><span class="o">.</span><span class="n">set</span><span class="p">(</span><span class="n">newVals</span><span class="p">)</span>
+
+    <span class="c1"># force ee types</span>
+    <span class="n">fc</span> <span class="o">=</span> <span class="n">ee</span><span class="o">.</span><span class="n">FeatureCollection</span><span class="p">(</span><span class="n">fc</span><span class="p">)</span>
+    <span class="n">ee_feature_names</span> <span class="o">=</span> <span class="n">ee</span><span class="o">.</span><span class="n">List</span><span class="p">(</span><span class="n">feature_names</span><span class="p">)</span>
+
+    <span class="c1"># normalize the features in the entire featureCollection</span>
+    <span class="n">fc_norm</span> <span class="o">=</span> <span class="n">fc</span><span class="o">.</span><span class="n">map</span><span class="p">(</span><span class="n">feature_scaling</span><span class="p">)</span>
+
+    <span class="k">return</span> <span class="n">fc_norm</span>
+</code></pre>
+</div>
+</details>
+</div>
+</div>
+<div class="doc doc-object doc-function">
+<h3 class="doc doc-heading" id="hydrafloods.ml.minmax_image_scaling">
+
+        <code class="highlight language-python">
+minmax_image_scaling<span class="p">(</span><span class="n">image</span><span class="p">,</span> <span class="n">scaling_dict</span><span class="p">,</span> <span class="n">feature_names</span><span class="p">)</span>        </code>
+
+
+      </h3>
+<div class="doc doc-contents ">
+<p>Function to scale image between min/max values
+Expects that scaling_dict keys match bands</p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>image</code></td>
+<td><code>ee.Image</code></td>
+<td>
+<p>image to scale</p>
+</td>
+<td><em>required</em></td>
+</tr>
+<tr>
+<td><code>scaling_dict</code></td>
+<td><code>ee.Dictionary</code></td>
+<td>
+<p>dictionary of min/max values to scale to</p>
+</td>
+<td><em>required</em></td>
+</tr>
+</tbody>
+</table>
+<p>returns
+    ee.Image: scaled image</p>
+<details class="quote">
+          <summary>Source code in <code>hydrafloods/ml.py</code></summary>
+          <div class="highlight">
+<pre><span></span><code><span class="nd">@decorators</span><span class="o">.</span><span class="n">carry_metadata</span>
+<span class="k">def</span> <span class="nf">minmax_image_scaling</span><span class="p">(</span><span class="n">image</span><span class="p">,</span> <span class="n">scaling_dict</span><span class="p">,</span> <span class="n">feature_names</span><span class="p">):</span>
+    <span class="sd">"""Function to scale image between min/max values</span>
+<span class="sd">    Expects that scaling_dict keys match bands</span>
+
+<span class="sd">    args:</span>
+<span class="sd">        image (ee.Image): image to scale</span>
+<span class="sd">        scaling_dict (ee.Dictionary): dictionary of min/max values to scale to</span>
+
+<span class="sd">    returns</span>
+<span class="sd">        ee.Image: scaled image</span>
+<span class="sd">    """</span>
+    <span class="c1"># get dict as image</span>
+    <span class="n">scaling_img</span> <span class="o">=</span> <span class="n">scaling_dict</span><span class="o">.</span><span class="n">toImage</span><span class="p">()</span>
+    <span class="c1"># extract the min/max values per band</span>
+    <span class="n">min_img</span> <span class="o">=</span> <span class="n">scaling_img</span><span class="o">.</span><span class="n">select</span><span class="p">(</span><span class="s2">".*_min"</span><span class="p">)</span>
+    <span class="n">max_img</span> <span class="o">=</span> <span class="n">scaling_img</span><span class="o">.</span><span class="n">select</span><span class="p">(</span><span class="s2">".*_max"</span><span class="p">)</span>
+    <span class="c1"># apply scaling</span>
+    <span class="k">return</span> <span class="p">(</span>
+        <span class="n">image</span><span class="o">.</span><span class="n">select</span><span class="p">(</span><span class="nb">sorted</span><span class="p">(</span><span class="n">feature_names</span><span class="p">))</span>
+        <span class="o">.</span><span class="n">subtract</span><span class="p">(</span><span class="n">min_img</span><span class="p">)</span>
+        <span class="o">.</span><span class="n">divide</span><span class="p">(</span><span class="n">max_img</span><span class="o">.</span><span class="n">subtract</span><span class="p">(</span><span class="n">min_img</span><span class="p">))</span>
+        <span class="o">.</span><span class="n">float</span><span class="p">()</span>
+    <span class="p">)</span>
+</code></pre>
+</div>
+</details>
+</div>
+</div>
+<div class="doc doc-object doc-function">
+<h3 class="doc doc-heading" id="hydrafloods.ml.minmax_scaling_dict">
+
+        <code class="highlight language-python">
+minmax_scaling_dict<span class="p">(</span><span class="n">fc</span><span class="p">,</span> <span class="n">feature_names</span><span class="p">)</span>        </code>
+
+
+      </h3>
+<div class="doc doc-contents ">
+<p>Function to calculate the minimum and maximum values of feautures in a collection
+Expects that fc has all feature names</p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>fc</code></td>
+<td><code>ee.FeatureCollection</code></td>
+<td>
+<p>feature collection with the features used to calculate min/max value</p>
+</td>
+<td><em>required</em></td>
+</tr>
+<tr>
+<td><code>feature_names</code></td>
+<td><code>list[str]</code></td>
+<td>
+<p>names of feature columns to calculat min/max values from</p>
+</td>
+<td><em>required</em></td>
+</tr>
+</tbody>
+</table>
+<p>returns
+    ee.Dictionary: dictionary of minimum and maximum values for each feature name</p>
+<details class="quote">
+          <summary>Source code in <code>hydrafloods/ml.py</code></summary>
+          <div class="highlight">
+<pre><span></span><code><span class="k">def</span> <span class="nf">minmax_scaling_dict</span><span class="p">(</span><span class="n">fc</span><span class="p">,</span> <span class="n">feature_names</span><span class="p">):</span>
+    <span class="sd">"""Function to calculate the minimum and maximum values of feautures in a collection</span>
+<span class="sd">    Expects that fc has all feature names</span>
+
+<span class="sd">    args:</span>
+<span class="sd">        fc (ee.FeatureCollection): feature collection with the features used to calculate min/max value</span>
+<span class="sd">        feature_names (list[str]):  names of feature columns to calculat min/max values from</span>
+
+<span class="sd">    returns</span>
+<span class="sd">        ee.Dictionary: dictionary of minimum and maximum values for each feature name</span>
+<span class="sd">    """</span>
+
+    <span class="c1"># force ee types</span>
+    <span class="n">fc</span> <span class="o">=</span> <span class="n">ee</span><span class="o">.</span><span class="n">FeatureCollection</span><span class="p">(</span><span class="n">fc</span><span class="p">)</span>
+    <span class="n">ee_feature_names</span> <span class="o">=</span> <span class="n">ee</span><span class="o">.</span><span class="n">List</span><span class="p">(</span><span class="n">feature_names</span><span class="p">)</span>
+
+    <span class="c1"># apply reducer on each feature column</span>
+    <span class="n">feature_min_max</span> <span class="o">=</span> <span class="n">fc</span><span class="o">.</span><span class="n">reduceColumns</span><span class="p">(</span>
+        <span class="n">ee</span><span class="o">.</span><span class="n">Reducer</span><span class="o">.</span><span class="n">minMax</span><span class="p">()</span><span class="o">.</span><span class="n">repeat</span><span class="p">(</span><span class="n">ee_feature_names</span><span class="o">.</span><span class="n">length</span><span class="p">()),</span> <span class="n">ee_feature_names</span>
+    <span class="p">)</span>
+
+    <span class="c1"># min/max feature names</span>
+    <span class="n">names</span> <span class="o">=</span> <span class="n">ee_feature_names</span><span class="o">.</span><span class="n">map</span><span class="p">(</span>
+        <span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">ee</span><span class="o">.</span><span class="n">List</span><span class="p">([</span><span class="n">ee</span><span class="o">.</span><span class="n">String</span><span class="p">(</span><span class="n">x</span><span class="p">)</span><span class="o">.</span><span class="n">cat</span><span class="p">(</span><span class="s2">"_min"</span><span class="p">),</span> <span class="n">ee</span><span class="o">.</span><span class="n">String</span><span class="p">(</span><span class="n">x</span><span class="p">)</span><span class="o">.</span><span class="n">cat</span><span class="p">(</span><span class="s2">"_max"</span><span class="p">)])</span>
+    <span class="p">)</span><span class="o">.</span><span class="n">flatten</span><span class="p">()</span>
+
+    <span class="c1"># get the min/max values for each feature</span>
+    <span class="c1"># used to scale values from 0-1</span>
+    <span class="n">min_max_dict</span> <span class="o">=</span> <span class="n">ee</span><span class="o">.</span><span class="n">Dictionary</span><span class="o">.</span><span class="n">fromLists</span><span class="p">(</span>
+        <span class="n">names</span><span class="p">,</span>
+        <span class="n">ee</span><span class="o">.</span><span class="n">List</span><span class="p">(</span><span class="n">feature_min_max</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">"min"</span><span class="p">))</span><span class="o">.</span><span class="n">zip</span><span class="p">(</span><span class="n">feature_min_max</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">"max"</span><span class="p">))</span><span class="o">.</span><span class="n">flatten</span><span class="p">(),</span>
+    <span class="p">)</span>
+
+    <span class="k">return</span> <span class="n">min_max_dict</span>
+</code></pre>
+</div>
+</details>
+</div>
+</div>
+<div class="doc doc-object doc-function">
+<h3 class="doc doc-heading" id="hydrafloods.ml.pca">
+
+        <code class="highlight language-python">
+pca<span class="p">(</span><span class="n">image</span><span class="p">,</span> <span class="n">region</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">scale</span><span class="o">=</span><span class="mi">90</span><span class="p">,</span> <span class="n">max_pixels</span><span class="o">=</span><span class="mf">1000000000.0</span><span class="p">)</span>        </code>
+
+
+      </h3>
+<div class="doc doc-contents ">
+<p>Principal component analysis decomposition of image bands</p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>image</code></td>
+<td><code>ee.Image</code></td>
+<td>
+<p>image to apply pca to</p>
+</td>
+<td><em>required</em></td>
+</tr>
+<tr>
+<td><code>region</code></td>
+<td><code>ee.Geometry | None</code></td>
+<td>
+<p>region to sample values for covariance matrix, 
+if set to <code>None</code> will use img.geometry(). default = None</p>
+</td>
+<td><code>None</code></td>
+</tr>
+<tr>
+<td><code>scale</code></td>
+<td><code>int</code></td>
+<td>
+<p>scale at which to perform reduction operations, setting higher will prevent OOM errors. default = 90</p>
+</td>
+<td><code>90</code></td>
+</tr>
+<tr>
+<td><code>max_pixels</code></td>
+<td><code>int</code></td>
+<td>
+<p>maximum number of pixels to use in reduction operations. default = 1e9</p>
+</td>
+<td><code>1000000000.0</code></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Returns:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>ee.Image</code></td>
+<td>
+<p>principal components scaled by </p>
+</td>
+</tr>
+</tbody>
+</table>
+<details class="quote">
+          <summary>Source code in <code>hydrafloods/ml.py</code></summary>
+          <div class="highlight">
+<pre><span></span><code><span class="k">def</span> <span class="nf">pca</span><span class="p">(</span><span class="n">image</span><span class="p">,</span> <span class="n">region</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">scale</span><span class="o">=</span><span class="mi">90</span><span class="p">,</span> <span class="n">max_pixels</span><span class="o">=</span><span class="mf">1e9</span><span class="p">):</span>
+    <span class="sd">"""Principal component analysis decomposition of image bands</span>
+
+<span class="sd">    args:</span>
+<span class="sd">        image (ee.Image): image to apply pca to</span>
+<span class="sd">        region (ee.Geometry | None, optional): region to sample values for covariance matrix, </span>
+<span class="sd">            if set to `None` will use img.geometry(). default = None</span>
+<span class="sd">        scale (int, optional): scale at which to perform reduction operations, setting higher will prevent OOM errors. default = 90</span>
+<span class="sd">        max_pixels (int, optional): maximum number of pixels to use in reduction operations. default = 1e9</span>
+
+<span class="sd">    returns:</span>
+<span class="sd">        ee.Image: principal components scaled by </span>
+<span class="sd">    """</span>
+
+    <span class="n">bandNames</span> <span class="o">=</span> <span class="n">image</span><span class="o">.</span><span class="n">bandNames</span><span class="p">()</span>
+
+    <span class="n">out_band_names</span> <span class="o">=</span> <span class="n">ee</span><span class="o">.</span><span class="n">List</span><span class="o">.</span><span class="n">sequence</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">bandNames</span><span class="o">.</span><span class="n">length</span><span class="p">())</span><span class="o">.</span><span class="n">map</span><span class="p">(</span>
+        <span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">ee</span><span class="o">.</span><span class="n">String</span><span class="p">(</span><span class="s2">"pc_"</span><span class="p">)</span><span class="o">.</span><span class="n">cat</span><span class="p">(</span><span class="n">ee</span><span class="o">.</span><span class="n">Number</span><span class="p">(</span><span class="n">b</span><span class="p">)</span><span class="o">.</span><span class="n">int</span><span class="p">())</span>
+    <span class="p">)</span>
+
+    <span class="c1"># Mean center the data to enable a faster covariance reducer</span>
+    <span class="c1"># and an SD stretch of the principal components.</span>
+    <span class="n">meanDict</span> <span class="o">=</span> <span class="n">image</span><span class="o">.</span><span class="n">reduceRegion</span><span class="p">(</span>
+        <span class="n">reducer</span><span class="o">=</span><span class="n">ee</span><span class="o">.</span><span class="n">Reducer</span><span class="o">.</span><span class="n">mean</span><span class="p">(),</span> <span class="n">geometry</span><span class="o">=</span><span class="n">region</span><span class="p">,</span> <span class="n">scale</span><span class="o">=</span><span class="n">scale</span><span class="p">,</span> <span class="n">maxPixels</span><span class="o">=</span><span class="n">max_pixels</span>
+    <span class="p">)</span>
+    <span class="n">means</span> <span class="o">=</span> <span class="n">ee</span><span class="o">.</span><span class="n">Image</span><span class="o">.</span><span class="n">constant</span><span class="p">(</span><span class="n">meanDict</span><span class="o">.</span><span class="n">values</span><span class="p">(</span><span class="n">bandNames</span><span class="p">))</span>
+    <span class="n">centered</span> <span class="o">=</span> <span class="n">image</span><span class="o">.</span><span class="n">subtract</span><span class="p">(</span><span class="n">means</span><span class="p">)</span>
+
+    <span class="c1"># Collapse the bands of the image into a 1D array per pixel.</span>
+    <span class="n">arrays</span> <span class="o">=</span> <span class="n">centered</span><span class="o">.</span><span class="n">toArray</span><span class="p">()</span>
+
+    <span class="c1"># Compute the covariance of the bands within the region.</span>
+    <span class="n">covar</span> <span class="o">=</span> <span class="n">arrays</span><span class="o">.</span><span class="n">reduceRegion</span><span class="p">(</span>
+        <span class="n">reducer</span><span class="o">=</span><span class="n">ee</span><span class="o">.</span><span class="n">Reducer</span><span class="o">.</span><span class="n">centeredCovariance</span><span class="p">(),</span>
+        <span class="n">geometry</span><span class="o">=</span><span class="n">region</span><span class="p">,</span>
+        <span class="n">scale</span><span class="o">=</span><span class="n">scale</span><span class="p">,</span>
+        <span class="n">maxPixels</span><span class="o">=</span><span class="n">max_pixels</span><span class="p">,</span>
+    <span class="p">)</span>
+
+    <span class="c1"># Get the 'array' covariance result and cast to an array.</span>
+    <span class="c1"># This represents the band-to-band covariance within the region.</span>
+    <span class="n">covarArray</span> <span class="o">=</span> <span class="n">ee</span><span class="o">.</span><span class="n">Array</span><span class="p">(</span><span class="n">covar</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">"array"</span><span class="p">))</span>
+
+    <span class="c1"># Perform an eigen analysis and slice apart the values and vectors.</span>
+    <span class="n">eigens</span> <span class="o">=</span> <span class="n">covarArray</span><span class="o">.</span><span class="n">eigen</span><span class="p">()</span>
+
+    <span class="c1"># This is a P-length vector of Eigenvalues.</span>
+    <span class="n">eigenValues</span> <span class="o">=</span> <span class="n">eigens</span><span class="o">.</span><span class="n">slice</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+    <span class="c1"># This is a PxP matrix with eigenvectors in rows.</span>
+    <span class="n">eigenVectors</span> <span class="o">=</span> <span class="n">eigens</span><span class="o">.</span><span class="n">slice</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+
+    <span class="c1"># Convert the array image to 2D arrays for matrix computations.</span>
+    <span class="n">arrayImage</span> <span class="o">=</span> <span class="n">arrays</span><span class="o">.</span><span class="n">toArray</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+
+    <span class="c1"># Left multiply the image array by the matrix of eigenvectors.</span>
+    <span class="n">principalComponents</span> <span class="o">=</span> <span class="n">ee</span><span class="o">.</span><span class="n">Image</span><span class="p">(</span><span class="n">eigenVectors</span><span class="p">)</span><span class="o">.</span><span class="n">matrixMultiply</span><span class="p">(</span><span class="n">arrayImage</span><span class="p">)</span>
+
+    <span class="c1"># Turn the square roots of the Eigenvalues into a P-band image.</span>
+    <span class="n">sdImage</span> <span class="o">=</span> <span class="p">(</span>
+        <span class="n">ee</span><span class="o">.</span><span class="n">Image</span><span class="p">(</span><span class="n">eigenValues</span><span class="o">.</span><span class="n">sqrt</span><span class="p">())</span><span class="o">.</span><span class="n">arrayProject</span><span class="p">([</span><span class="mi">0</span><span class="p">])</span><span class="o">.</span><span class="n">arrayFlatten</span><span class="p">([</span><span class="n">out_band_names</span><span class="p">])</span>
+    <span class="p">)</span>
+
+    <span class="c1"># Turn the PCs into a P-band image, normalized by SD.</span>
+    <span class="k">return</span> <span class="p">(</span>
+        <span class="n">principalComponents</span>
+        <span class="c1"># Throw out an an unneeded dimension, [[]] -&gt; [].</span>
+        <span class="o">.</span><span class="n">arrayProject</span><span class="p">([</span><span class="mi">0</span><span class="p">])</span>
+        <span class="c1"># Make the one band array image a multi-band image, [] -&gt; image.</span>
+        <span class="o">.</span><span class="n">arrayFlatten</span><span class="p">([</span><span class="n">out_band_names</span><span class="p">])</span>
+        <span class="c1"># Normalize the PCs by their SDs.</span>
+        <span class="o">.</span><span class="n">divide</span><span class="p">(</span><span class="n">sdImage</span><span class="p">)</span>
+    <span class="p">)</span>
+</code></pre>
+</div>
+</details>
+</div>
+</div>
+<div class="doc doc-object doc-function">
+<h3 class="doc doc-heading" id="hydrafloods.ml.random_forest_ee">
+
+        <code class="highlight language-python">
+random_forest_ee<span class="p">(</span><span class="n">n_trees</span><span class="p">,</span> <span class="n">feature_collection</span><span class="p">,</span> <span class="n">feature_names</span><span class="p">,</span> <span class="n">label</span><span class="p">,</span> <span class="n">scaling</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">mode</span><span class="o">=</span><span class="s1">'classification'</span><span class="p">)</span>        </code>
+
+
+      </h3>
+<div class="doc doc-contents ">
+<p>Helper function to scale feature collection and train random forest model</p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>n_trees</code></td>
+<td><code>int</code></td>
+<td>
+<p>number of trees for random forest model</p>
+</td>
+<td><em>required</em></td>
+</tr>
+<tr>
+<td><code>feature_collection</code></td>
+<td><code>ee.FeatureCollection</code></td>
+<td>
+<p>features to train random forest model</p>
+</td>
+<td><em>required</em></td>
+</tr>
+<tr>
+<td><code>feature_names</code></td>
+<td><code>list[str]</code></td>
+<td>
+<p>names of feature columns to use in random forest model (x values)</p>
+</td>
+<td><em>required</em></td>
+</tr>
+<tr>
+<td><code>label</code></td>
+<td><code>str</code></td>
+<td>
+<p>name of feature column to fit random forest model (y value)</p>
+</td>
+<td><em>required</em></td>
+</tr>
+<tr>
+<td><code>scaling</code></td>
+<td><code>str | None</code></td>
+<td>
+<p>name of scaling to apply before training. One of: "minmax", "standard", <code>None</code>.
+default = <code>None</code></p>
+</td>
+<td><code>None</code></td>
+</tr>
+<tr>
+<td><code>mode</code></td>
+<td><code>str</code></td>
+<td>
+<p>The output mode of the random forest model. One of: "classification", "regression",
+"probability". default = "classification"</p>
+</td>
+<td><code>'classification'</code></td>
+</tr>
+</tbody>
+</table>
+<details class="quote">
+          <summary>Source code in <code>hydrafloods/ml.py</code></summary>
+          <div class="highlight">
+<pre><span></span><code><span class="k">def</span> <span class="nf">random_forest_ee</span><span class="p">(</span>
+    <span class="n">n_trees</span><span class="p">,</span>
+    <span class="n">feature_collection</span><span class="p">,</span>
+    <span class="n">feature_names</span><span class="p">,</span>
+    <span class="n">label</span><span class="p">,</span>
+    <span class="n">scaling</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+    <span class="n">mode</span><span class="o">=</span><span class="s2">"classification"</span><span class="p">,</span>
+<span class="p">):</span>
+    <span class="sd">"""Helper function to scale feature collection and train random forest model</span>
+
+<span class="sd">    args:</span>
+<span class="sd">        n_trees (int): number of trees for random forest model</span>
+<span class="sd">        feature_collection (ee.FeatureCollection): features to train random forest model</span>
+<span class="sd">        feature_names (list[str]): names of feature columns to use in random forest model (x values)</span>
+<span class="sd">        label (str): name of feature column to fit random forest model (y value)</span>
+<span class="sd">        scaling (str | None, optional): name of scaling to apply before training. One of: "minmax", "standard", `None`.</span>
+<span class="sd">            default = `None`</span>
+<span class="sd">        mode (str, optional): The output mode of the random forest model. One of: "classification", "regression",</span>
+<span class="sd">            "probability". default = "classification"</span>
+<span class="sd">    """</span>
+
+    <span class="k">if</span> <span class="n">scaling</span> <span class="o">==</span> <span class="s2">"minmax"</span><span class="p">:</span>
+        <span class="n">scaling_dict</span> <span class="o">=</span> <span class="n">minmax_scaling_dict</span><span class="p">(</span><span class="n">feature_collection</span><span class="p">,</span> <span class="n">feature_names</span><span class="p">)</span>
+        <span class="n">fc_norm</span> <span class="o">=</span> <span class="n">minmax_feature_scaling</span><span class="p">(</span>
+            <span class="n">feature_collection</span><span class="p">,</span> <span class="n">scaling_dict</span><span class="p">,</span> <span class="n">feature_names</span>
+        <span class="p">)</span>
+
+    <span class="k">elif</span> <span class="n">scaling</span> <span class="o">==</span> <span class="s2">"standard"</span><span class="p">:</span>
+        <span class="n">scaling_dict</span> <span class="o">=</span> <span class="n">standard_scaling_dict</span><span class="p">(</span><span class="n">feature_collection</span><span class="p">,</span> <span class="n">feature_names</span><span class="p">)</span>
+        <span class="n">fc_norm</span> <span class="o">=</span> <span class="n">standard_feature_scaling</span><span class="p">(</span>
+            <span class="n">feature_collection</span><span class="p">,</span> <span class="n">scaling_dict</span><span class="p">,</span> <span class="n">feature_names</span>
+        <span class="p">)</span>
+
+    <span class="k">elif</span> <span class="n">scaling</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="n">scaling_dict</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="n">fc_norm</span> <span class="o">=</span> <span class="n">feature_collection</span>
+
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span>
+            <span class="s2">"Could not determine scaling option. Options are ['minmax', 'standar', or None]"</span>
+        <span class="p">)</span>
+
+    <span class="n">classifier</span> <span class="o">=</span> <span class="p">(</span>
+        <span class="n">ee</span><span class="o">.</span><span class="n">Classifier</span><span class="o">.</span><span class="n">smileRandomForest</span><span class="p">(</span><span class="n">n_trees</span><span class="p">)</span>
+        <span class="o">.</span><span class="n">setOutputMode</span><span class="p">(</span><span class="n">mode</span><span class="o">.</span><span class="n">upper</span><span class="p">())</span>
+        <span class="o">.</span><span class="n">train</span><span class="p">(</span><span class="n">fc_norm</span><span class="p">,</span> <span class="n">label</span><span class="p">,</span> <span class="n">feature_names</span><span class="p">)</span>
+    <span class="p">)</span>
+
+    <span class="k">return</span> <span class="n">classifier</span><span class="p">,</span> <span class="n">scaling_dict</span>
+</code></pre>
+</div>
+</details>
+</div>
+</div>
+<div class="doc doc-object doc-function">
+<h3 class="doc doc-heading" id="hydrafloods.ml.standard_feature_scaling">
+
+        <code class="highlight language-python">
+standard_feature_scaling<span class="p">(</span><span class="n">fc</span><span class="p">,</span> <span class="n">scaling_dict</span><span class="p">,</span> <span class="n">feature_names</span><span class="p">)</span>        </code>
+
+
+      </h3>
+<div class="doc doc-contents ">
+<p>Function to apply standard (Z-score) scaling to feature collection</p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>fc</code></td>
+<td><code>ee.FeatureCollection</code></td>
+<td>
+<p>feature collection to scale</p>
+</td>
+<td><em>required</em></td>
+</tr>
+<tr>
+<td><code>scaling_dict</code></td>
+<td><code>ee.Dictionary</code></td>
+<td>
+<p>dictionary of mean/std dev values for scaling</p>
+</td>
+<td><em>required</em></td>
+</tr>
+<tr>
+<td><code>feature_names</code></td>
+<td><code>list[str]</code></td>
+<td>
+<p>names of feature columns to calculate apply scaling to</p>
+</td>
+<td><em>required</em></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Returns:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>ee.FeatureCollection</code></td>
+<td>
+<p>scaled feature collection</p>
+</td>
+</tr>
+</tbody>
+</table>
+<details class="quote">
+          <summary>Source code in <code>hydrafloods/ml.py</code></summary>
+          <div class="highlight">
+<pre><span></span><code><span class="k">def</span> <span class="nf">standard_feature_scaling</span><span class="p">(</span><span class="n">fc</span><span class="p">,</span> <span class="n">scaling_dict</span><span class="p">,</span> <span class="n">feature_names</span><span class="p">):</span>
+    <span class="sd">"""Function to apply standard (Z-score) scaling to feature collection</span>
+
+<span class="sd">    args:</span>
+<span class="sd">        fc (ee.FeatureCollection): feature collection to scale</span>
+<span class="sd">        scaling_dict (ee.Dictionary): dictionary of mean/std dev values for scaling</span>
+<span class="sd">        feature_names (list[str]):  names of feature columns to calculate apply scaling to</span>
+
+<span class="sd">    returns:</span>
+<span class="sd">        ee.FeatureCollection: scaled feature collection</span>
+<span class="sd">    """</span>
+
+    <span class="k">def</span> <span class="nf">feature_scaling</span><span class="p">(</span><span class="n">feature</span><span class="p">):</span>
+        <span class="sd">"""Nested closure function to apply scaling on each column in each feature</span>
+<span class="sd">        """</span>
+
+        <span class="k">def</span> <span class="nf">iter_cols</span><span class="p">(</span><span class="n">i</span><span class="p">):</span>
+            <span class="sd">"""Loops through feature columns</span>
+<span class="sd">            """</span>
+            <span class="n">i</span> <span class="o">=</span> <span class="n">ee</span><span class="o">.</span><span class="n">String</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+            <span class="n">v</span> <span class="o">=</span> <span class="n">ee</span><span class="o">.</span><span class="n">Number</span><span class="p">(</span><span class="n">feature</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">i</span><span class="p">))</span>
+            <span class="n">mean</span> <span class="o">=</span> <span class="n">ee</span><span class="o">.</span><span class="n">Number</span><span class="p">(</span><span class="n">scaling_dict</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">i</span><span class="o">.</span><span class="n">cat</span><span class="p">(</span><span class="s2">"_mean"</span><span class="p">)))</span>
+            <span class="n">stddev</span> <span class="o">=</span> <span class="n">ee</span><span class="o">.</span><span class="n">Number</span><span class="p">(</span><span class="n">scaling_dict</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">i</span><span class="o">.</span><span class="n">cat</span><span class="p">(</span><span class="s2">"_stdDev"</span><span class="p">)))</span>
+            <span class="k">return</span> <span class="n">v</span><span class="o">.</span><span class="n">subtract</span><span class="p">(</span><span class="n">mean</span><span class="p">)</span><span class="o">.</span><span class="n">divide</span><span class="p">(</span><span class="n">stddev</span><span class="p">)</span>
+
+        <span class="c1"># apply scaling on each column of feature</span>
+        <span class="n">scaled</span> <span class="o">=</span> <span class="n">ee_feature_names</span><span class="o">.</span><span class="n">map</span><span class="p">(</span><span class="n">iter_cols</span><span class="p">)</span>
+        <span class="c1"># get a dictionary of new values with old feature names</span>
+        <span class="n">newVals</span> <span class="o">=</span> <span class="n">ee</span><span class="o">.</span><span class="n">Dictionary</span><span class="o">.</span><span class="n">fromLists</span><span class="p">(</span><span class="n">ee_feature_names</span><span class="p">,</span> <span class="n">scaled</span><span class="p">)</span>
+        <span class="c1"># set feature columns new values</span>
+        <span class="k">return</span> <span class="n">feature</span><span class="o">.</span><span class="n">set</span><span class="p">(</span><span class="n">newVals</span><span class="p">)</span>
+
+    <span class="c1"># force ee types</span>
+    <span class="n">fc</span> <span class="o">=</span> <span class="n">ee</span><span class="o">.</span><span class="n">FeatureCollection</span><span class="p">(</span><span class="n">fc</span><span class="p">)</span>
+    <span class="n">ee_feature_names</span> <span class="o">=</span> <span class="n">ee</span><span class="o">.</span><span class="n">List</span><span class="p">(</span><span class="n">feature_names</span><span class="p">)</span>
+
+    <span class="c1"># normalize the features in the entire featureCollection</span>
+    <span class="n">fc_norm</span> <span class="o">=</span> <span class="n">fc</span><span class="o">.</span><span class="n">map</span><span class="p">(</span><span class="n">feature_scaling</span><span class="p">)</span>
+
+    <span class="k">return</span> <span class="n">fc_norm</span>
+</code></pre>
+</div>
+</details>
+</div>
+</div>
+<div class="doc doc-object doc-function">
+<h3 class="doc doc-heading" id="hydrafloods.ml.standard_image_scaling">
+
+        <code class="highlight language-python">
+standard_image_scaling<span class="p">(</span><span class="n">image</span><span class="p">,</span> <span class="n">scaling_dict</span><span class="p">,</span> <span class="n">feature_names</span><span class="p">)</span>        </code>
+
+
+      </h3>
+<div class="doc doc-contents ">
+<p>Function to apply z-score scaling to image
+Expects that scaling_dict keys match bands</p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>image</code></td>
+<td><code>ee.Image</code></td>
+<td>
+<p>image to scale</p>
+</td>
+<td><em>required</em></td>
+</tr>
+<tr>
+<td><code>scaling_dict</code></td>
+<td><code>ee.Dictionary</code></td>
+<td>
+<p>dictionary of mean/std dev values to scale to</p>
+</td>
+<td><em>required</em></td>
+</tr>
+</tbody>
+</table>
+<p>returns
+    ee.Image: scaled image</p>
+<details class="quote">
+          <summary>Source code in <code>hydrafloods/ml.py</code></summary>
+          <div class="highlight">
+<pre><span></span><code><span class="nd">@decorators</span><span class="o">.</span><span class="n">carry_metadata</span>
+<span class="k">def</span> <span class="nf">standard_image_scaling</span><span class="p">(</span><span class="n">image</span><span class="p">,</span> <span class="n">scaling_dict</span><span class="p">,</span> <span class="n">feature_names</span><span class="p">):</span>
+    <span class="sd">"""Function to apply z-score scaling to image</span>
+<span class="sd">    Expects that scaling_dict keys match bands</span>
+
+<span class="sd">    args:</span>
+<span class="sd">        image (ee.Image): image to scale</span>
+<span class="sd">        scaling_dict (ee.Dictionary): dictionary of mean/std dev values to scale to</span>
+
+<span class="sd">    returns</span>
+<span class="sd">        ee.Image: scaled image</span>
+<span class="sd">    """</span>
+    <span class="c1"># get dict as image</span>
+    <span class="n">scaling_img</span> <span class="o">=</span> <span class="n">scaling_dict</span><span class="o">.</span><span class="n">toImage</span><span class="p">()</span>
+    <span class="c1"># extract the min/max values per band</span>
+    <span class="n">mean_img</span> <span class="o">=</span> <span class="n">scaling_img</span><span class="o">.</span><span class="n">select</span><span class="p">(</span><span class="s2">".*_mean"</span><span class="p">)</span>
+    <span class="n">stddev_img</span> <span class="o">=</span> <span class="n">scaling_img</span><span class="o">.</span><span class="n">select</span><span class="p">(</span><span class="s2">".*_stdDev"</span><span class="p">)</span>
+    <span class="c1"># apply scaling</span>
+    <span class="k">return</span> <span class="p">(</span>
+        <span class="n">image</span><span class="o">.</span><span class="n">select</span><span class="p">(</span><span class="nb">sorted</span><span class="p">(</span><span class="n">feature_names</span><span class="p">))</span>
+        <span class="o">.</span><span class="n">subtract</span><span class="p">(</span><span class="n">mean_img</span><span class="p">)</span>
+        <span class="o">.</span><span class="n">divide</span><span class="p">(</span><span class="n">stddev_img</span><span class="p">)</span>
+        <span class="o">.</span><span class="n">float</span><span class="p">()</span>
+    <span class="p">)</span>
+</code></pre>
+</div>
+</details>
+</div>
+</div>
+<div class="doc doc-object doc-function">
+<h3 class="doc doc-heading" id="hydrafloods.ml.standard_scaling_dict">
+
+        <code class="highlight language-python">
+standard_scaling_dict<span class="p">(</span><span class="n">fc</span><span class="p">,</span> <span class="n">feature_names</span><span class="p">)</span>        </code>
+
+
+      </h3>
+<div class="doc doc-contents ">
+<p>Function to calculate the mean and standard deviation values of feautures in a collection
+Expects that fc has all feature names</p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>fc</code></td>
+<td><code>ee.FeatureCollection</code></td>
+<td>
+<p>feature collection with the features used to calculate mean/std dev value</p>
+</td>
+<td><em>required</em></td>
+</tr>
+<tr>
+<td><code>feature_names</code></td>
+<td><code>list[str]</code></td>
+<td>
+<p>names of feature columns to calculat mean/std dev values from</p>
+</td>
+<td><em>required</em></td>
+</tr>
+</tbody>
+</table>
+<p>returns
+    ee.Dictionary: dictionary of mean and standard deviation values for each feature name</p>
+<details class="quote">
+          <summary>Source code in <code>hydrafloods/ml.py</code></summary>
+          <div class="highlight">
+<pre><span></span><code><span class="k">def</span> <span class="nf">standard_scaling_dict</span><span class="p">(</span><span class="n">fc</span><span class="p">,</span> <span class="n">feature_names</span><span class="p">):</span>
+    <span class="sd">"""Function to calculate the mean and standard deviation values of feautures in a collection</span>
+<span class="sd">    Expects that fc has all feature names</span>
+
+<span class="sd">    args:</span>
+<span class="sd">        fc (ee.FeatureCollection): feature collection with the features used to calculate mean/std dev value</span>
+<span class="sd">        feature_names (list[str]): names of feature columns to calculat mean/std dev values from</span>
+
+<span class="sd">    returns</span>
+<span class="sd">        ee.Dictionary: dictionary of mean and standard deviation values for each feature name</span>
+<span class="sd">    """</span>
+    <span class="c1"># force ee types</span>
+    <span class="n">fc</span> <span class="o">=</span> <span class="n">ee</span><span class="o">.</span><span class="n">FeatureCollection</span><span class="p">(</span><span class="n">fc</span><span class="p">)</span>
+    <span class="n">ee_feature_names</span> <span class="o">=</span> <span class="n">ee</span><span class="o">.</span><span class="n">List</span><span class="p">(</span><span class="n">feature_names</span><span class="p">)</span>
+
+    <span class="c1"># get a combined reducer for caluclating mean and standard dev</span>
+    <span class="n">mean_stddev</span> <span class="o">=</span> <span class="n">ee</span><span class="o">.</span><span class="n">Reducer</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="o">.</span><span class="n">combine</span><span class="p">(</span><span class="n">ee</span><span class="o">.</span><span class="n">Reducer</span><span class="o">.</span><span class="n">stdDev</span><span class="p">(),</span> <span class="kc">None</span><span class="p">,</span> <span class="kc">True</span><span class="p">)</span>
+
+    <span class="c1"># apply reducer on each feature column</span>
+    <span class="n">feature_mean_stddev</span> <span class="o">=</span> <span class="n">fc</span><span class="o">.</span><span class="n">reduceColumns</span><span class="p">(</span>
+        <span class="n">mean_stddev</span><span class="o">.</span><span class="n">repeat</span><span class="p">(</span><span class="n">ee_feature_names</span><span class="o">.</span><span class="n">length</span><span class="p">()),</span> <span class="n">ee_feature_names</span>
+    <span class="p">)</span>
+
+    <span class="c1"># mean / std dev feature names</span>
+    <span class="n">names</span> <span class="o">=</span> <span class="n">ee_feature_names</span><span class="o">.</span><span class="n">map</span><span class="p">(</span>
+        <span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">ee</span><span class="o">.</span><span class="n">List</span><span class="p">([</span><span class="n">ee</span><span class="o">.</span><span class="n">String</span><span class="p">(</span><span class="n">x</span><span class="p">)</span><span class="o">.</span><span class="n">cat</span><span class="p">(</span><span class="s2">"_mean"</span><span class="p">),</span> <span class="n">ee</span><span class="o">.</span><span class="n">String</span><span class="p">(</span><span class="n">x</span><span class="p">)</span><span class="o">.</span><span class="n">cat</span><span class="p">(</span><span class="s2">"_stdDev"</span><span class="p">)])</span>
+    <span class="p">)</span><span class="o">.</span><span class="n">flatten</span><span class="p">()</span>
+
+    <span class="c1"># get the mean / std dev values for each feature</span>
+    <span class="c1"># used to scale values from ~ -3 to 3</span>
+    <span class="n">mean_stddev_dict</span> <span class="o">=</span> <span class="n">ee</span><span class="o">.</span><span class="n">Dictionary</span><span class="o">.</span><span class="n">fromLists</span><span class="p">(</span>
+        <span class="n">names</span><span class="p">,</span>
+        <span class="n">ee</span><span class="o">.</span><span class="n">List</span><span class="p">(</span><span class="n">feature_mean_stddev</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">"mean"</span><span class="p">))</span>
+        <span class="o">.</span><span class="n">zip</span><span class="p">(</span><span class="n">feature_mean_stddev</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">"stdDev"</span><span class="p">))</span>
+        <span class="o">.</span><span class="n">flatten</span><span class="p">(),</span>
+    <span class="p">)</span>
+
+    <span class="k">return</span> <span class="n">mean_stddev_dict</span>
+</code></pre>
+</div>
+</details>
+</div>
+</div>
+</div>
+</div>
+</div>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
+        
+          <a href="../filtering/" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+            </div>
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                filtering module
+              </div>
+            </div>
+          </a>
+        
+        
+          <a href="../thresholding/" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                thresholding module
+              </div>
+            </div>
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/vendor.7e0ee788.min.js"></script>
+      <script src="../assets/javascripts/bundle.c1ccee15.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      
+      <script>
+        app = initialize({
+          base: "..",
+          features: [],
+          search: Object.assign({
+            worker: "../assets/javascripts/worker/search.4ac00218.min.js"
+          }, typeof search !== "undefined" && search)
+        })
+      </script>
+      
+    
+  </body>
+</html>

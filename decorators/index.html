@@ -1,0 +1,397 @@
+
+<!DOCTYPE html>
+
+<html class="no-js" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<link href="../img/favicon.ico" rel="shortcut icon"/>
+<meta content="mkdocs-1.1.2, mkdocs-material-6.1.3" name="generator"/>
+<title>decorators module - HYDRAFloods Documentation</title>
+<link href="../assets/stylesheets/main.2cb7adb3.min.css" rel="stylesheet"/>
+<link href="../assets/stylesheets/palette.f0267088.min.css" rel="stylesheet"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&amp;display=fallback" rel="stylesheet"/>
+<style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
+<link href="../stylesheets/extra.css" rel="stylesheet"/>
+</head>
+<body data-md-color-accent="none" data-md-color-primary="none" data-md-color-scheme="" dir="ltr">
+<input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
+<input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
+<label class="md-overlay" for="__drawer"></label>
+<div data-md-component="skip">
+<a class="md-skip" href="#hydrafloods.decorators">
+          Skip to content
+        </a>
+</div>
+<div data-md-component="announce">
+</div>
+<header class="md-header" data-md-component="header">
+<nav aria-label="Header" class="md-header-nav md-grid">
+<a aria-label="HYDRAFloods Documentation" class="md-header-nav__button md-logo" href=".." title="HYDRAFloods Documentation">
+<img alt="logo" src="../img/hydrafloods_logo.png"/>
+</a>
+<label class="md-header-nav__button md-icon" for="__drawer">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"></path></svg>
+</label>
+<div class="md-header-nav__title" data-md-component="header-title">
+<div class="md-header-nav__ellipsis">
+<span class="md-header-nav__topic md-ellipsis">
+            HYDRAFloods Documentation
+          </span>
+<span class="md-header-nav__topic md-ellipsis">
+            
+              decorators module
+            
+          </span>
+</div>
+</div>
+<label class="md-header-nav__button md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"></path></svg>
+</label>
+<div class="md-search" data-md-component="search" role="dialog">
+<label class="md-search__overlay" for="__search"></label>
+<div class="md-search__inner" role="search">
+<form class="md-search__form" name="search">
+<input aria-label="Search" autocapitalize="off" autocomplete="off" autocorrect="off" class="md-search__input" data-md-component="search-query" data-md-state="active" name="query" placeholder="Search" spellcheck="false" type="text"/>
+<label class="md-search__icon md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"></path></svg>
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"></path></svg>
+</label>
+<button aria-label="Clear" class="md-search__icon md-icon" data-md-component="search-reset" tabindex="-1" type="reset">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"></path></svg>
+</button>
+</form>
+<div class="md-search__output">
+<div class="md-search__scrollwrap" data-md-scrollfix="">
+<div class="md-search-result" data-md-component="search-result">
+<div class="md-search-result__meta">
+            Initializing search
+          </div>
+<ol class="md-search-result__list"></ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+</nav>
+</header>
+<div class="md-container" data-md-component="container">
+<main class="md-main" data-md-component="main">
+<div class="md-main__inner md-grid">
+<div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Navigation" class="md-nav md-nav--primary" data-md-level="0">
+<label class="md-nav__title" for="__drawer">
+<a aria-label="HYDRAFloods Documentation" class="md-nav__button md-logo" href=".." title="HYDRAFloods Documentation">
+<img alt="logo" src="../img/hydrafloods_logo.png"/>
+</a>
+    HYDRAFloods Documentation
+  </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="..">
+      Overview
+    </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../installation/">
+      Installation
+    </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../getting-started/">
+      Getting Started
+    </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../using-datasets/">
+      Using the Dataset class
+    </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../algorithms/">
+      Algorithms
+    </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../workflow-example/">
+      Workflow Example
+    </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../cli/">
+      Command Line Interface
+    </a>
+</li>
+<li class="md-nav__item md-nav__item--active md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" data-md-toggle="nav-8" id="nav-8" type="checkbox"/>
+<label class="md-nav__link" for="nav-8">
+      API Reference
+      <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="API Reference" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="nav-8">
+<span class="md-nav__icon md-icon"></span>
+        API Reference
+      </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../datasets/">
+      datasets module
+    </a>
+</li>
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" data-md-toggle="toc" id="__toc" type="checkbox"/>
+<label class="md-nav__link md-nav__link--active" for="__toc">
+        decorators module
+        <span class="md-nav__icon md-icon"></span>
+</label>
+<a class="md-nav__link md-nav__link--active" href="./">
+      decorators module
+    </a>
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#hydrafloods.decorators">
+    decorators
+  </a>
+<nav aria-label="decorators" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#hydrafloods.decorators.carry_metadata">
+    carry_metadata()
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../geeutils/">
+      geeutils module
+    </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../fetch/">
+      fetch module
+    </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../filtering/">
+      filtering module
+    </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../ml/">
+      ml module
+    </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../thresholding/">
+      thresholding module
+    </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../timeseries/">
+      timeseries module
+    </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../utils/">
+      utils module
+    </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#hydrafloods.decorators">
+    decorators
+  </a>
+<nav aria-label="decorators" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#hydrafloods.decorators.carry_metadata">
+    carry_metadata()
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-content">
+<article class="md-content__inner md-typeset">
+<h1>decorators module</h1>
+<div class="doc doc-object doc-module">
+<h2 class="doc doc-heading" id="hydrafloods.decorators">
+<code>hydrafloods.decorators</code>
+</h2>
+<div class="doc doc-contents first">
+<div class="doc doc-children">
+<div class="doc doc-object doc-function">
+<h3 class="doc doc-heading" id="hydrafloods.decorators.carry_metadata">
+<code class="highlight language-python">
+carry_metadata<span class="p">(</span><span class="n">func</span><span class="p">)</span> </code>
+</h3>
+<div class="doc doc-contents">
+<p>Decorator function to set the properties of an image from computations to that of the input
+Function to decorate should take an ee.Image object and return an ee.Image object</p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>func</code></td>
+<td><code>object</code></td>
+<td>
+<p>function object to wrap. Expects that an element within args is of type 
+ee.Image and will use first ee.Image to carry metadata</p>
+</td>
+<td><em>required</em></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Examples:</strong></p>
+<div class="codehilite">
+<pre><span></span><code><span class="nd">@decorators</span><span class="o">.</span><span class="n">carry_metadata</span>
+<span class="k">def</span> <span class="nf">ndvi</span><span class="p">(</span><span class="n">img</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">img</span><span class="o">.</span><span class="n">normalizedDifference</span><span class="p">([</span><span class="n">b1</span><span class="p">,</span><span class="n">b2</span><span class="p">])</span>
+</code></pre>
+</div>
+<p>Returned image(s) will have all of the same metadata properties as the input including <code>system:time_start</code></p>
+<details class="quote">
+<summary>Source code in <code>hydrafloods/decorators.py</code></summary>
+<div class="highlight">
+<pre><span></span><code><span class="k">def</span> <span class="nf">carry_metadata</span><span class="p">(</span><span class="n">func</span><span class="p">):</span>
+    <span class="sd">"""Decorator function to set the properties of an image from computations to that of the input</span>
+<span class="sd">    Function to decorate should take an ee.Image object and return an ee.Image object</span>
+
+<span class="sd">    args:</span>
+<span class="sd">        func (object): function object to wrap. Expects that an element within args is of type </span>
+<span class="sd">            ee.Image and will use first ee.Image to carry metadata</span>
+
+<span class="sd">    Example:</span>
+<span class="sd">        ```python</span>
+<span class="sd">        @decorators.carry_metadata</span>
+<span class="sd">        def ndvi(img):</span>
+<span class="sd">            return img.normalizedDifference([b1,b2])</span>
+<span class="sd">        ```</span>
+<span class="sd">        Returned image(s) will have all of the same metadata properties as the input including `system:time_start`</span>
+<span class="sd">    """</span>
+
+    <span class="nd">@functools</span><span class="o">.</span><span class="n">wraps</span><span class="p">(</span><span class="n">func</span><span class="p">)</span>
+    <span class="k">def</span> <span class="nf">wrapper</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+        <span class="c1"># expects an element within args is img</span>
+        <span class="c1"># will set the metadata to first ee.Image instance</span>
+        <span class="c1"># this assumption is true for 99% of fuctions used for ee.ImageCollection.map()</span>
+        <span class="n">result</span> <span class="o">=</span> <span class="n">ee</span><span class="o">.</span><span class="n">Image</span><span class="p">(</span><span class="n">func</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">))</span>
+        <span class="n">img</span> <span class="o">=</span> <span class="p">[</span><span class="n">i</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">args</span> <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">ee</span><span class="o">.</span><span class="n">Image</span><span class="p">)][</span><span class="mi">0</span><span class="p">]</span>
+        <span class="k">return</span> <span class="n">ee</span><span class="o">.</span><span class="n">Image</span><span class="p">(</span>
+            <span class="n">result</span><span class="o">.</span><span class="n">copyProperties</span><span class="p">(</span><span class="n">img</span><span class="p">)</span><span class="o">.</span><span class="n">set</span><span class="p">(</span>
+                <span class="s2">"system:time_start"</span><span class="p">,</span> <span class="n">img</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">"system:time_start"</span><span class="p">)</span>
+            <span class="p">)</span>
+        <span class="p">)</span>
+
+    <span class="k">return</span> <span class="n">wrapper</span>
+</code></pre>
+</div>
+</details>
+</div>
+</div>
+</div>
+</div>
+</div>
+</article>
+</div>
+</div>
+</main>
+<footer class="md-footer">
+<div class="md-footer-nav">
+<nav aria-label="Footer" class="md-footer-nav__inner md-grid">
+<a class="md-footer-nav__link md-footer-nav__link--prev" href="../datasets/" rel="prev">
+<div class="md-footer-nav__button md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"></path></svg>
+</div>
+<div class="md-footer-nav__title">
+<div class="md-ellipsis">
+<span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                datasets module
+              </div>
+</div>
+</a>
+<a class="md-footer-nav__link md-footer-nav__link--next" href="../geeutils/" rel="next">
+<div class="md-footer-nav__title">
+<div class="md-ellipsis">
+<span class="md-footer-nav__direction">
+                  Next
+                </span>
+                geeutils module
+              </div>
+</div>
+<div class="md-footer-nav__button md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"></path></svg>
+</div>
+</a>
+</nav>
+</div>
+<div class="md-footer-meta md-typeset">
+<div class="md-footer-meta__inner md-grid">
+<div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" rel="noopener" target="_blank">
+          Material for MkDocs
+        </a>
+</div>
+</div>
+</div>
+</footer>
+</div>
+<script src="../assets/javascripts/vendor.7e0ee788.min.js"></script>
+<script src="../assets/javascripts/bundle.c1ccee15.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+<script>
+        app = initialize({
+          base: "..",
+          features: [],
+          search: Object.assign({
+            worker: "../assets/javascripts/worker/search.4ac00218.min.js"
+          }, typeof search !== "undefined" && search)
+        })
+      </script>
+</body>
+</html>
